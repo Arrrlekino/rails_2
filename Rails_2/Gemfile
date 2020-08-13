@@ -40,6 +40,7 @@ gem 'uglifier', '>= 1.3.0'
 #gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+gem 'factory_bot'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -55,7 +56,9 @@ gem 'webpacker', '~> 4.0'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap'#, '>= 1.4.2', require: false
+#gem 'diff-lcs', '>= 1.2.0'
+#gem 'cleanup'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,7 +66,7 @@ group :development, :test do
   #gem 'capybara-webkit', github: 'thoughtbot/capybara-webkit', branch: 'master'
   gem 'database_cleaner'
   gem 'factory_bot_rails'#, '~> 5'
-#  gem 'factory-bot'
+ #gem 'factory-bot'
   gem 'pg', '~> 1.1'
   gem 'pry'
   gem 'rails-controller-testing'

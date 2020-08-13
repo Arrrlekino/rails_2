@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/faker-ruby/faker.git
-  revision: f094e2bfe437700335a6ec8f9d7340968283f350
+  revision: 81c3d9d57998619db70c8935a32e274621f2830d
   branch: master
   specs:
     faker (2.13.0)
@@ -78,7 +78,7 @@ GEM
       execjs
     bcrypt (3.1.15)
     bindex (0.8.1)
-    bootsnap (1.4.7)
+    bootsnap (1.4.8)
       msgpack (~> 1.0)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
@@ -106,7 +106,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     crass (1.0.6)
     database_cleaner (1.8.5)
     db-query-matchers (0.10.0)
@@ -194,8 +194,8 @@ GEM
       rack (>= 1.6.2, < 3)
     omniauth-facebook (6.0.0)
       omniauth-oauth2 (~> 1.2)
-    omniauth-oauth2 (1.6.0)
-      oauth2 (~> 1.1)
+    omniauth-oauth2 (1.7.0)
+      oauth2 (~> 1.4)
       omniauth (~> 1.9)
     orm_adapter (0.5.0)
     parallel (1.19.2)
@@ -282,13 +282,13 @@ GEM
       rspec-mocks (~> 3.9)
       rspec-support (~> 3.9)
     rspec-support (3.9.3)
-    rubocop (0.89.0)
+    rubocop (0.89.1)
       parallel (~> 1.10)
       parser (>= 2.7.1.1)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.7)
       rexml
-      rubocop-ast (>= 0.1.0, < 1.0)
+      rubocop-ast (>= 0.3.0, < 1.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (0.3.0)
@@ -359,7 +359,7 @@ DEPENDENCIES
   active_model_serializers
   activestorage (>= 5.2)
   ancestry
-  bootsnap (>= 1.4.2)
+  bootsnap
   bootstrap-sass (~> 3.4.1)
   breadcrumbs_on_rails
   cancancan
@@ -369,6 +369,7 @@ DEPENDENCIES
   db-query-matchers
   devise
   doorkeeper
+  factory_bot
   factory_bot_rails
   faker!
   inherited_resources
