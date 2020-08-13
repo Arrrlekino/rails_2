@@ -369,6 +369,7 @@ DEPENDENCIES
   db-query-matchers
   devise
   doorkeeper
+  factory_bot
   factory_bot_rails
   faker!
   inherited_resources
