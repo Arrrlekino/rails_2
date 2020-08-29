@@ -16,6 +16,10 @@ ActiveRecord::Schema.define(version: 2020_08_13_162123) do
   enable_extension "plpgsql"
 
   create_table "brands", force: :cascade do |t|
+    t.string "title"
+    t.string "bytitle"
+    t.string "img"
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

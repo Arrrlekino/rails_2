@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe MainController, type: :controller do
   describe 'GET index' do
@@ -22,7 +23,7 @@ RSpec.describe MainController, type: :controller do
     end
       it 'instance var hits include only hit' do
         get :index
-        expect(assigns(:hits)).to match_array([product])
+        expect(assigns(:hits)).to match_array([hits])
         #hit = Product.hit.create(id:1)
         #get :index
         #expect(assigns(:hits)).to match_array([hit])
