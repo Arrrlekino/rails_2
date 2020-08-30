@@ -17,10 +17,29 @@
 
   <body>
 
+<!--top-header-->
+<%= render  "include/main/top_header" %>
+<!--top-header-->
+
+<!--start-logo-->
+  <div>
+    <%= link_to  "root_path" do %>
+      <h1>Luxury watches</h1>
+    <% end %>  
+  </div>
+<!--start-logo-->
+
+<!--bottom-header-->
+<%= render  "include/main/bottom_header" %>
+<!--bottom-header-->
+
   <div class="content">
     <%= yield %>
   </div>
 
+<!--footer-->
+<%= render  "include/main/footer" %>
+<!--footer-->
 
   <script src="<%= asset_path 'application' %>"></script>  
   </body>
