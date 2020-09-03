@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- + ?
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@1.0.0"></script> 
 <script src="/assets/application-39eb597fbdf6fc18350032c464a85cd78592b7914e330cb0e0f6fd323c03132f.js"></script>
+-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
+
+<!-- 
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_pack_tag 'custom', 'data-turbolinks-track': 'reload' %>
+-->  
+    
+    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'bootstrap', media: 'all' %>
+    <%= stylesheet_link_tag 'bootstrap',  media: 'all' %>
     <%= stylesheet_link_tag 'flexslider', media: 'all' %>
-    <%= stylesheet_link_tag 'memenu', media: 'all' %>
-    <%= stylesheet_link_tag 'style', media: 'all' %>
-    <%= stylesheet_link_tag 'mystyle', media: 'all' %>
+    <%= stylesheet_link_tag 'memenu',     media: 'all' %>
+    <%= stylesheet_link_tag 'style',      media: 'all' %>
+    <%= stylesheet_link_tag 'mystyle',    media: 'all' %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,12 +32,12 @@
   <body>
 
 <!--top-header-->
-<%= render  "include/main/top_header" %>
+<%= render  'include/main/top_header' %>
 <!--top-header-->
 
 <!--start-logo-->
-  <div>
-    <%= link_to  "root_path" do %>
+  <div class="logo">
+    <%= link_to  root_path do %>
       <h1>Luxury watches</h1>
     <% end %>  
   </div>

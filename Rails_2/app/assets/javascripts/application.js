@@ -1,7 +1,8 @@
+// app/javascript/packs/application.js
+
 //= require rails-ujs
-//= require activestorage
-//= require turbolinks
-//= require_tree .
+
+
 
 //= require jquery-1.11.0.min
 //= require bootstrap.min
