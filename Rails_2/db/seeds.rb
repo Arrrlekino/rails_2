@@ -315,3 +315,4 @@ Product.create(attr) unless Product.where(attr).first
 end
 
 # - - - - -
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

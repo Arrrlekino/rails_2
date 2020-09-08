@@ -12,7 +12,7 @@ class ProductController < ApplicationController
 
     def recent_products
       [] if recently.none?
-      Product.where(id: recently)  
+      Product.where(id: recently)
     end
 
     def recently
@@ -23,7 +23,7 @@ class ProductController < ApplicationController
       session[:viewed_products] ||= []
       session[:viewed_products] = ([@product.id] + session[viewed_products])
                                   .uniq
-                                  .take(3)  
+                                  .take(3)
     end
 
     def set_page_options
